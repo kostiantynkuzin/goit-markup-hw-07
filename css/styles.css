@@ -165,8 +165,7 @@ img {
   max-width: 1600px;
   margin: 0 auto;
 }
-
-.hero-title {
+.hero__title {
   margin: auto;
   width: 696px;
   margin-bottom: 30px;
@@ -177,7 +176,7 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-.hero-button {
+.hero__button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -193,29 +192,19 @@ img {
   border-radius: 4px;
   border: none;
 }
-
 /* ----------------------------------------------description-------------------------------------------------*/
 .description {
   padding-top: var(--section-size);
   padding-bottom: var(--section-size);
 }
-.description-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-color);
-  margin-bottom: 10px;
-}
-.description-list {
+.specifics {
   display: flex;
   align-items: center;
 }
-.description-item:not(:last-child) {
+.specifics__item:not(:last-child) {
   margin-right: 30px;
 }
-.description-item::before {
+.specifics__item::before {
   display: block;
   content: '';
   height: 120px;
@@ -225,19 +214,28 @@ img {
   background-position: center;
   border-radius: 4px;
 }
-.antenna-icon::before {
+.antenna__icon::before {
   background-image: url(../images/antenna.png);
 }
-.clock-icon::before {
+.clock__icon::before {
   background-image: url(../images/clock.png);
 }
-.diagram-icon::before {
+.diagram__icon::before {
   background-image: url(../images/diagram.png);
 }
-.astronaut-icon::before {
+.astronaut__icon::before {
   background-image: url(../images/astronaut.png);
 }
-.description-text {
+.specifics__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+.specifics__text {
   width: 270px;
   font-weight: 400;
   font-size: 14px;
@@ -245,17 +243,15 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
 /* ---------------------------------------------examples----------------------------------------------------*/
 .examples {
   padding-bottom: var(--section-size);
 }
-.examples-list {
+.works {
   display: flex;
   justify-content: space-between;
 }
-.examples-title,
-.team-main-title {
+.examples__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -264,10 +260,10 @@ img {
   color: var(--title-color);
   margin-bottom: 50px;
 }
-.examples-item {
+.works__item {
   position: relative;
 }
-.examples-description {
+.works__description {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -294,6 +290,12 @@ img {
   padding-bottom: var(--section-size);
 }
 .team-main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
   margin-bottom: 50px;
 }
 .team-list {

@@ -4,6 +4,12 @@
   padding-bottom: 60px;
   max-width: 1600px;
   margin: 0 auto;
+  .logo {
+    display: inline-block;
+    margin-right: 0;
+    margin-bottom: 20px;
+    color: var(--primary-white-color);
+  }
 }
 .footer-content {
   display: flex;
@@ -35,12 +41,6 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .logo {
-  display: inline-block;
-  margin-right: 0;
-  margin-bottom: 20px;
-  color: var(--primary-white-color);
-}
 .soc-network {
   display: inline-block;
   margin-left: 70px;
@@ -60,12 +60,7 @@
 .soc-item + .soc-item {
   margin-left: 10px;
 }
-.soc-link:hover {
-  background-color: var(--accent-color);
-}
-.soc-link:focus {
-  background-color: var(--accent-color);
-}
+
 .soc-link {
   width: 44px;
   height: 44px;
@@ -75,8 +70,12 @@
   justify-content: center;
   align-items: center;
   transition-property: background-color;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .soc-icon {
   fill: var(--primary-white-color);
@@ -103,11 +102,11 @@
   background: #2f303a;
   outline: none;
   color: var(--primary-white-color);
-}
-.subscribe-input:focus {
-  border-color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .subscribe-btn {
   min-width: 200px;
@@ -127,9 +126,9 @@
   text-align: center;
   padding: 10px 29px;
   cursor: pointer;
-}
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

@@ -1,23 +1,14 @@
 .examples {
   padding-bottom: var(--section-size);
 }
-.works {
+.examples_list {
   display: flex;
   justify-content: space-between;
 }
-.examples__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  margin-bottom: 50px;
-}
-.works__item {
+.examples_item {
   position: relative;
 }
-.works__description {
+.examples_description {
   position: absolute;
   left: 0;
   bottom: 0;

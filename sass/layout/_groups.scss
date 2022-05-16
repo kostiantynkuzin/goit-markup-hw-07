@@ -3,16 +3,6 @@
   padding-bottom: var(--section-size);
   text-align: center;
 }
-.groups-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  margin-bottom: 50px;
-}
 .groups-list {
   display: flex;
   justify-content: center;
@@ -42,10 +32,8 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  .groups-link:hover . & {
+  .groups-link:hover &,
+  :focus & {
     fill: var(--accent-color);
-    .groups-link:focus & {
-      border-color: var(--accent-color);
-    }
   }
 }

@@ -5,15 +5,6 @@
   padding-top: var(--section-size);
   padding-bottom: var(--section-size);
 }
-.team-main-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  margin-bottom: 50px;
-}
 .team-list {
   display: flex;
 }
@@ -69,7 +60,7 @@
 .team-soc-icon {
   fill: #afb1b8;
   transition: fill 250ms;
-  .team-soc-link:hover,
+  .team-soc-link:hover &,
   :focus & {
     fill: var(--primary-white-color);
   }
